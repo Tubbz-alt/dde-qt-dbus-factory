@@ -1,10 +1,8 @@
 <node>
   <interface name="com.deepin.defender.risantiav">
-    <method name="startApp">
+    <method name="StartApp">
     </method>
-    <method name="exitApp">
-    </method>
-    <method name="preInitialize">
+    <method name="ExitApp">
     </method>
     <!-- 设置扫描文件大小 M -->
     <method name="SetScanFileSize">
