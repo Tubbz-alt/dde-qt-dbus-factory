@@ -30,6 +30,10 @@
     </signal>
     <signal name="NotifyHeartbeat">
     </signal>
+    <!-- 设置右键扫描是否可见 -->
+    <method name="SetRightScanVisable">
+        <arg name="flag" type="b" direction="in"></arg>
+    </method>
 
     <!-- 设置ssh远程登陆端口状态 -->
     <method name="setRemRegisterStatus">
