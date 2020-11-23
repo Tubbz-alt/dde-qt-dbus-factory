@@ -231,5 +231,15 @@
     </signal>
     <signal name="notifyUpdateLauncherList">
     </signal>
+
+    <!-- usb病毒查杀 -->
+    <!-- 隔离u盘病毒 -->
+    <method name="IsolateUsbVirus">
+       <arg name="usbMountPath" type="s" dirction="in"></arg>
+    </method>
+    <!-- 通知隔离u盘病毒信号 -->
+    <signal name="NotifyIsolateUsbVirus">
+    <arg name="usbMountPath" type="s" direction="out"/>
+    </signal>
   </interface>
 </node>
