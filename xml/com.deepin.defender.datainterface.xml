@@ -132,7 +132,7 @@
     </method>
     <!-- 安恒/瑞星应用商店跳转 -->
     <method name="JumpToAppStore">
-        <arg name="nType" type="i" direction="out"></arg>
+        <arg name="nType" type="i" direction="in"></arg>
     </method>
     <!-- 开机自启动 -->
     <method name="startLauncherManage">
