@@ -3,6 +3,9 @@
   <!--  <property access="read" type="(sddiss)" name="singleFuncData"/>-->
   <!--  <property access="read" type="d" name="globalRecv"/>-->
     <property access="read" type="d" name="globalRecv"/>
+    <!-- 病毒库正在更新 -->
+    <property name="VdbUpdating" type="b" access="read">
+    </property>
     <signal name="NotifyDetailData">
       <arg type="s" name="name"/>
       <arg type="d" name="recv"/>

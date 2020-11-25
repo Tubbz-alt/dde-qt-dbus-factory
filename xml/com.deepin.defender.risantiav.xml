@@ -1,5 +1,8 @@
 <node>
   <interface name="com.deepin.defender.risantiav">
+    <!-- 病毒库正在更新 -->
+    <property name="VdbUpdating" type="b" access="read">
+    </property>
     <method name="StartApp">
     </method>
     <method name="ExitApp">
