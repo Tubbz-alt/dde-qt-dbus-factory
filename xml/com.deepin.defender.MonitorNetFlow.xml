@@ -111,5 +111,11 @@
     </signal>
     <signal name="requestShowOnlyWhiteListSysNotify">
     </signal>
+    <!-- 获取磁盘信息 -->
+    <!-- 获取磁盘设备路径列表 -->
+    <method name="GetDiskDevicePathList">
+        <arg name="pathList" type="as" direction="out"></arg>
+        <annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="QStringList"/>
+    </method>
   </interface>
 </node>
