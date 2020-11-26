@@ -45,6 +45,15 @@
   <method name="GetSystemUpdate">
     <arg name="value" type="i" direction="out"></arg>
   </method>
+
+  <!-- 判断是否正在进行U盘扫描 -->
+  <method name="IsUsbScanning">
+    <arg name="value" type="b" direction="out"></arg>
+  </method>
+  <!-- 停止U盘扫描 -->
+  <method name="StopUsbScannig">
+  </method>
+
   <signal name="UpdateUI">
   </signal>
   <signal name="NotifyHeartbeat">
