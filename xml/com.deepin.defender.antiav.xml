@@ -172,14 +172,10 @@
    <method name="QueryTrustFiles"></method>
    <!-- 查询隔离文件 -->
    <method name="QueryIsolationFiles"></method>
-   <!-- 获得信任区域的数量 -->
-   <method name="GetTrustAreaSize">
-      <arg name="size" type="i" direction="out"></arg>
-   </method>
-   <!-- 获得隔离区域的数量 -->
-   <method name="GetIsolationAreaSize">
-      <arg name="size" type="i" direction="out"></arg>
-   </method>
+   <!-- 查询信任区域的数量 -->
+   <method name="SelectTrustAreaSize"></method>
+   <!-- 查询隔离区域的数量 -->
+   <method name="SelectIsolationAreaSize"></method>
 
     <!--- 发送服务病毒版本　-->
     <signal name="SendSrvVersion">
@@ -218,6 +214,14 @@
     <!--- 发送查询隔离文件　-->
     <signal name="SendQueryIsolationFiles">
       <arg type="s" name="files"/>
+    </signal>
+    <!--- 发送查询信任区数量　-->
+    <signal name="SendTrustAreaSize">
+      <arg type="i" name="size"/>
+    </signal>
+    <!--- 发送查询隔离区数量　-->
+    <signal name="SendIsolationAreaSize">
+      <arg type="i" name="size"/>
     </signal>
   </interface>
 </node>
